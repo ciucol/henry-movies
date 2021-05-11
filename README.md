@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Henry Movies / Primer proyecto con Redux (Alone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `Día 1`
 
-## Available Scripts
+**Martes 11 de mayo de 2021**
 
-In the project directory, you can run:
+1. Inicio el proyecto usando
+   ```
+   npx create-react-app nombredelproyecto //el nombre del proyecto debe ser todo minúsculas
+   ```
+2. Instalo `React Router`para manejar las rutas usando `npm install react-router-dom`
+3. Instalo `Redux React`para manejar el estado global en la store usando `npm install react-redux`
+4. Creo un repo en GitHub, agregó localmente el remote usando
 
-### `yarn start`
+   ```
+   git remote add origin nombreDelRepoEnGithub
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Creo la carpeta `components` para crear y administrar los componentes
+6. Creo la carpeta `pages` para manejar todas las vistas
+7. Creo la carpeta `redux`para manejar lo relacionado con Redux
+8. Creo la carpeta `routes`para manejar las rutas
+9. Creo una carpeta `ìmg`
+   Las carpetas las creo en `src`
+10. creo en la carpeta `routes` un archivo `routes`para manejar las rutas de la app que serán 4 el path `/` que mostrará la landing, el path `/movies` que mostrarà la lista de películas, el path `/favorites` mostrará los favoritos y buscaré que se puedan guardar en `local storage` y el path `/about` que carga este readme, voy a tratar de traerlo de la API de github. No se si se pueda hacer -> [Documentación Api de Github](https://docs.github.com/en/rest/reference/repos#get-a-repository)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Estos son los diseños de la primera versión
 
-### `yarn test`
+<figure>
+    <img src="./src/img/resources/">
+    <figcaption>Landing - path="/"</figcaption>
+    <br/>
+    <img src="./src/img/resources/screen 1.png">
+    <figcaption>Vista películas - path="/movies"</figcaption>
+    <br/>
+    <img src="./src/img/resources/screen 2.png">
+    <figcaption>Modal de descripción de película (aún no se si es otro path) - path="/modal"</figcaption>
+    <br/>
+    <img src="./src/img/resources/screen 3.png">
+    <figcaption>Vista favoritos - path="/favorites"</figcaption>
+    <br/>
+    <img src="./src/img/resources/zcomponents.png">
+    <figcaption>Componentes"</figcaption>
+    <br/>
+</figure>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+8. Reviso la documentación de GitHub para escribir de manera decente un Readme 😳 -> [Documentación Readme - GitHub](https://docs.github.com/es/github/writing-on-github/basic-writing-and-formatting-syntax)
+9. Creo las rutas usando la documentación oficial de [React Router](https://reactrouter.com/web/guides/quick-start)
+10. Finalizo fase de planeación con el arbol de archivos
+<figure>
+    <img style="width:400px" src="./src/img/resources/tree.png">
+    <figcaption>Landing - path="/"</figcaption>
+    <br/>
+</figure>
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+11. Realizo commit "Configuración inicial Pages-Components-Routes-Redux"
